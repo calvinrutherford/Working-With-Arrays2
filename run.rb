@@ -12,7 +12,8 @@ get '/years' do
 
   # code!
   @years = (1972..2013).to_a
-  erb :years, layout: :main 
+  # you can also do Array(1972..2013)
+  erb :years, layout: :main
 end
 
 get '/states' do
